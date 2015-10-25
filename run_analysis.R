@@ -91,6 +91,8 @@ write.table(tidydata, file = "tidydata.txt",row.name=FALSE)
 
 ## 8. Create CodeBook
 
+write(names(tidydata), file = "variables.txt", ncolumns = 1)
+
 library("memisc", lib.loc="~/R/win-library/3.2")
 codebook(tidydata)
 
